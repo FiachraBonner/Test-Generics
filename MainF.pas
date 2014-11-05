@@ -11,8 +11,10 @@ type
     Button1: TButton;
     Memo1: TMemo;
     Button2: TButton;
+    Button3: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -199,6 +201,11 @@ begin
   finally
     dl.Free;
   end;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  ShowMessage('Hello World');
 end;
 
 end.
